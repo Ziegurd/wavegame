@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="libraries/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="libraries/izi/css/iziModal.css">
+    <title>Home Page</title>
+  </head>
+  <body>
+    <div class="container w-75 h-100 border rounded">
+      <form id="form">
+        <div class="row">
+          <div class="col-6 bg-light p-5">
+            <div class="row">
+              <h3>General Information</h3>
+            </div>
+            <div class="row">
+              <select class="form-control" id="title" name="title">
+                <option value="" selected disabled>Title</option>
+                <option>Businessman</option>
+                <option>Secretary</option>
+                <option>Reporter</option>
+              </select>
+            </div>
+            <div class="row mt-1">
+              <input type="text" class="col form-control" placeholder="First name" name="firstName">&nbsp;
+              <input type="text" class="col form-control" placeholder="Last name" name="lastName">
+            </div>
+            <div class="row mt-1">
+              <select class="form-control" name="position">
+                <option value="" selected disabled>Position</option>
+                <option value="Director">Director</option>
+                <option value="Manager">Manager</option>
+                <option value="Employee">Employee</option>
+              </select>
+            </div>
+            <div class="row mt-1">
+              <input type="text" class="form-control" placeholder="Company" name="company">
+            </div>
+          </div>
+          <div class="col-6 bg-warning p-5">
+            <div class="row">
+              <h3>Contact Details</h3>
+            </div>
+            <div class="row">
+              <input type="text" class="form-control" placeholder="Address" name="address">
+            </div>
+            <div class="row mt-1">
+              <input type="text" class="col-3 form-control" placeholder="Zipcode" name="zipcode">
+              <select class="col-9 form-control" name="place">
+                <option value="" selected disabled>Place</option>
+                <option value="Street">Street</option>
+                <option value="District">District</option>
+                <option value="City">City</option>
+              </select>
+            </div>
+            <div class="row mt-1">
+              <select class="form-control" id="country" name="country">
+              </select>
+            </div>
+            <div class="row mt-1">
+              <input type="text" class="col-3 form-control" placeholder="Code +" name="code">
+              <input type="text" class="col-9 form-control" placeholder="Phone Number" name="phone">
+            </div>
+            <div class="row mt-1">
+              <input type="text" class="form-control" placeholder="Your Email" name="email">
+            </div>
+            <div class="row mt-1">
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="term">
+                <label class="form-check-label" for="term">I do accept the <strong>Terms and Conditions</strong> of your site</label>
+              </div>
+            </div>
+            <button class="btn btn-light" id="btnRegister">Register</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div id="modal-default" data-iziModal-fullscreen="true" data-iziModal-title="Register Confirmation">
+      <ul id="modal-content">
+      </ul>
+    </div>
+  </body>
+  <script src="libraries/jquery/jquery.js" type="text/javascript"></script>
+  <script src="libraries/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="libraries/izi/js/iziModal.js" type="text/javascript"></script>
+  <script src="js/script.js" type="text/javascript"></script>
+</html>
