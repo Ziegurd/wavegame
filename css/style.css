@@ -1,0 +1,9 @@
+body {
+ background-image: url("../assets/bg.jpg");
+ font-family: "Montserrat", "sans-serif";
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../assets/Montserrat-Black.ttf") format("truetype");
+}
